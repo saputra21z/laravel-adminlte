@@ -115,7 +115,7 @@
         <li class="header">MAIN NAVIGATION</li>
         <li>
          <a href="{{url('/member')}}">
-            <i class="fa fa-th"></i> <span>Members</span>
+            <i class="fa fa-users"></i> <span>Members</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>

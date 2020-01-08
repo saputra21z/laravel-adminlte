@@ -16,7 +16,8 @@ class MembersController extends Controller
      */
     public function index()
     {
-        $members = Member::paginate(3);
+        $members = Member::orderBy('id', 'desc') // cara membuat id yang di buat terakhir  menjadi urutan pertama
+                           ->paginate(3);
         return view('member.member', compact('members'));
     }
 
@@ -81,6 +82,12 @@ class MembersController extends Controller
      */
     public function update(Request $request, member $member)
     {
+        $request->validate([
+            'nama' => 'required',
+            'alamat' => 'required',
+            'email' => 'required|email|unique:members'
+            ]);
+
         Member::where('id', $member->id)
         ->update([
             'nama'=> $request->nama,

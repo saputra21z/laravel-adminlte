@@ -13,21 +13,18 @@
       <li class="active">Blank page</li>
     </ol>
   </section>
+  
     <div class="box">
         <div class="box-header with-border">
           <h3 class="box-title"><a href="{{ url('member/create')}}" class=" btn btn-primary mt-3">Tambah Data</a></h3>
-  
           <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                    title="Collapse">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" seatitle="Collapse">
               <i class="fa fa-minus"></i></button>
             <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
               <i class="fa fa-times"></i></button>
           </div>
-         
         </div>
-        
-       
+         
         <div class="box-body">
           {{-- content --}}
             <div class="box-body">
